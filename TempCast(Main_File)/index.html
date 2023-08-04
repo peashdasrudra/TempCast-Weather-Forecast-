@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="map.css" />
+  <title>Temp:Cast</title>
+</head>
+<body>
+    </div>
+  <header class="header">
+    <a href="#" class="logo">Temp:Cast</a>
+    <div class="wave"></div>
+  </header>
+  <div class="home">
+    <div class="location">
+      <button onclick="getCurrentLocationWeather()">
+        <div class="currentLocation">
+          <i class="fa-solid fa-bullseye"></i>
+          <h3>Current Location</h3>
+        </div>
+      </button>
+    </div>
+    <div class="container">
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" class="search-input" placeholder="Enter Your Location" />
+        <button class="search-button fa-solid fa-magnifying-glass" onclick="searchWeather()"></button>
+      </div>
+
+      <div class="not-found">
+        <img src="images/404.png" />
+        <p>Oops! Invalid location :(</p>
+      </div>
+
+      <div class="weather-box">
+        <div class="current-location">
+          <p class="location-name"></p>
+        </div>
+        <img src="" class="weather-image" />
+        <p class="temperature"></p>
+        <p class="description"></p>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
+          <div class="text">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+
+        <!-- New weather data elements -->
+        <div class="dew-point">
+          <i class="fa-solid fa-thermometer-half"></i>
+          <div class="text">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="visibility">
+          <i class="fa-solid fa-eye"></i>
+          <div class="text">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+        <!-- End of new weather data elements -->
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
